@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.css" integrity="sha512-qjes4kMRtfb2sdliSYNsNcJV92e+oZjG0ef8+GNJqFuqz5VtEt7KDIgNnmHca5BwCmLUZsIld50fTuofNCaDxQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>Fast Ride</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .hero-slide {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.55);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="bg-white py-2 shadow-md">
+    <div class="container mx-auto px-4">
+
+      <div class="flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+          <img
+            src="https://fastridelive.com/first_ride.png"
+            class="w-[60px] h-[50px] rounded-full object-cover"
+            alt="Fast Ride Logo"
+          >
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-black text-3xl focus:outline-none"
+        >
+          ☰
+        </button>
+
+        <!-- Menu -->
+        <div
+          id="menu"
+          class="hidden md:flex md:items-center md:flex-1"
+        >
+
+          <!-- Navigation -->
+          <ul class="flex flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-4 md:flex-1 mt-4 md:mt-0">
+
+            <li>
+              <a
+                href="#"
+                class="block text-black px-4 py-2 rounded hover:text-white hover:bg-gray-800 transition"
+              >
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block text-black px-4 py-2 rounded hover:text-white hover:bg-gray-800 transition"
+              >
+                About
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block text-black px-4 py-2 rounded hover:text-white hover:bg-gray-800 transition"
+              >
+                How it works
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block text-black px-4 py-2 rounded hover:text-white hover:bg-gray-800 transition"
+              >
+                City Coverage
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block text-black px-4 py-2 rounded hover:text-white hover:bg-gray-800 transition"
+              >
+                Career
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block text-black px-4 py-2 rounded hover:text-white hover:bg-gray-800 transition"
+              >
+                Register Now
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block text-black px-4 py-2 rounded hover:text-white hover:bg-gray-800 transition"
+              >
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+          <!-- Right Buttons -->
+          <div class="flex flex-col sm:flex-row gap-2 mt-4 md:mt-0">
+
+            <button
+              class="bg-white border border-gray-300 text-gray-900 rounded-full px-6 py-2 font-medium hover:bg-gray-200 transition"
+            >
+              Login
+            </button>
+
+            <button
+              class="bg-blue-950 text-white px-6 py-3 rounded-lg hover:bg-blue-900 transition"
+            >
+              Download App
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ================= CAROUSEL ================= -->
+
+  <section class="relative w-full overflow-hidden">
+
+    <!-- Slides Container -->
+    <div
+      id="carousel"
+      class="flex transition-transform duration-700 ease-in-out"
+    >
+
+      <!-- SLIDE 1 -->
+      <div
+        class="hero-slide min-w-full"
+        style="background-image: url('https://allprodad.com/wp-content/uploads/2022/04/06-03-22-car-ride-questions-scaled.jpg');"
+      >
+
+        <div class="hero-overlay min-h-[600px] flex items-center justify-center">
+
+          <div class="text-center px-6 md:px-20 lg:px-40 py-20">
+
+            <h3 class="text-2xl font-bold text-white">
+              Fast & Reliable
+            </h3>
+
+            <h1 class="text-4xl md:text-6xl font-bold text-white py-8">
+              Welcome To Fast Ride
+            </h1>
+
+            <p class="text-lg md:text-xl text-white max-w-3xl mx-auto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Tenetur cupiditate magnam perspiciatis quod sequi nesciunt
+              incidunt alias.
+            </p>
+
+            <button
+              class="px-6 py-3 rounded-xl mt-10 bg-blue-950 text-white hover:bg-blue-900 transition"
+            >
+              Start Now
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- SLIDE 2 -->
+      <div
+        class="hero-slide min-w-full"
+        style="background-image: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1600&q=80');"
+      >
+
+        <div class="hero-overlay min-h-[600px] flex items-center justify-center">
+
+          <div class="text-center px-6 md:px-20 lg:px-40 py-20">
+
+            <h3 class="text-2xl font-bold text-white">
+              Safe & Comfortable
+            </h3>
+
+            <h1 class="text-4xl md:text-6xl font-bold text-white py-8">
+              Your Journey, Our Priority
+            </h1>
+
+            <p class="text-lg md:text-xl text-white max-w-3xl mx-auto">
+              Travel comfortably with Fast Ride. Enjoy a convenient,
+              reliable and safe transportation experience.
+            </p>
+
+            <button
+              class="px-6 py-3 rounded-xl mt-10 bg-blue-950 text-white hover:bg-blue-900 transition"
+            >
+              Book A Ride
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- SLIDE 3 -->
+      <div
+        class="hero-slide min-w-full"
+        style="background-image: url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1600&q=80');"
+      >
+
+        <div class="hero-overlay min-h-[600px] flex items-center justify-center">
+
+          <div class="text-center px-6 md:px-20 lg:px-40 py-20">
+
+            <h3 class="text-2xl font-bold text-white">
+              Ride With Us
+            </h3>
+
+            <h1 class="text-4xl md:text-6xl font-bold text-white py-8">
+              Fast. Easy. Affordable.
+            </h1>
+
+            <p class="text-lg md:text-xl text-white max-w-3xl mx-auto">
+              Get where you need to go with Fast Ride. Simple booking,
+              professional drivers and dependable service.
+            </p>
+
+            <button
+              class="px-6 py-3 rounded-xl mt-10 bg-blue-950 text-white hover:bg-blue-900 transition"
+            >
+              Get Started
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- PREVIOUS BUTTON -->
+    <button
+      id="prev"
+      class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white w-12 h-12 rounded-full text-2xl hover:bg-black/80 transition"
+    >
+      &#10094;
+    </button>
+
+
+    <!-- NEXT BUTTON -->
+    <button
+      id="next"
+      class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white w-12 h-12 rounded-full text-2xl hover:bg-black/80 transition"
+    >
+      &#10095;
+    </button>
+
+
+    <!-- DOTS -->
+    <div
+      class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3"
+    >
+
+      <button
+        class="dot w-3 h-3 rounded-full bg-white"
+        data-slide="0"
+      ></button>
+
+      <button
+        class="dot w-3 h-3 rounded-full bg-white/50"
+        data-slide="1"
+      ></button>
+
+      <button
+        class="dot w-3 h-3 rounded-full bg-white/50"
+        data-slide="2"
+      ></button>
+
+    </div>
+
+  </section>
+
+
+
+  <div class="flex">
+    <div class="">
+      <img src="https://fastridelive.com/hero1.png " style="width: 700px;height: 500px;" alt="">
+    </div>
+    <div class="p-4">
+     <h4 class="mx-4 text-2xl text-(#092238)">About Fast Ride</h4>
+     <h1 class="text-6xl text-bold p-5 text-[#092238]">Trusted Drivers. Easy <br> Booking. Better Rides.</h1>
+     <p class="text-2xl p-3 text-secondary">At Fast Rides, our mission is to make urban mobility simple <br> and   reliable for every rider. We bridge the gap between you <br> and trusted drivers through technology built on trust and efficiency.</p>
+     <p class="text-3xl text-[#092238]"><i class="fa-solid fa-square-check"></i>Book and manage rides anytime, anywhere</p>
+     <p class="text-3xl text-[#092238]"><i class="fa-solid fa-square-check"></i>Connect with verified drivers across cities</p>
+     <p class="text-3xl text-[#092238]"><i class="fa-solid fa-square-check"></i>Get secure, customer-first support at every step</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-2">
+
+
+    <div class="ps-24">
+      <h1 class="text-3xl font-bold">What Riders Say</h1>
+      <div class="flex items-center gap-2 mt-4" >
+
+        <div class=" bg-[black]/10 p-4 rounded-xl" style="width: 250px;">
+          <p>"Fast Ride has completely transformed my commute. The drivers are professional, the app is intuitive, and I always feel safe."</p>
+          <div class="flex gap-2"><img class="rounded-full" src="https://i2-prod.mirror.co.uk/article36066120.ece/ALTERNATES/s1200f/0_Young-supermodel-Kristina-Pimenova.jpg" width="70px" alt="">
+          <div><h1 class="text-xl font-bold">Sara Khan</h1><p>Regulaar Rider</p></div></div>
+        </div>
+        <div class=" bg-[black]/10 p-4 rounded-xl" style="width: 250px;">
+          <p>"Fast Ride has completely transformed my commute. The drivers are professional, the app is intuitive, and I always feel safe."</p>
+          <div class="flex gap-2"><img class="rounded-full" src="https://i2-prod.mirror.co.uk/article36066120.ece/ALTERNATES/s1200f/0_Young-supermodel-Kristina-Pimenova.jpg" width="70px" alt="">
+          <div><h1 class="text-xl font-bold">Sara Khan</h1><p>Regulaar Rider</p></div></div>
+        </div>
+        
+      </div>
+    </div>
+    <div>
+      <div class="flex gap-3 pt-5">
+        <div class="p-2 flex flex-col gap-2">
+          <p style="width: 40px;" class="bg-[navy] py-2 px-3  rounded-full"><i class="fa-solid fa-user text-white "></i></p>
+          <h1 class="text-[navy] text-2xl font-bold">500+</h1>
+          <p>Verified Drivers</p>
+        </div>
+        <div class="p-2 flex flex-col gap-2">
+          <p style="width: 40px;" class="bg-[navy] py-2 px-3  rounded-full"><i class="fa-solid fa-user text-white "></i></p>
+          <h1 class="text-[navy] text-2xl font-bold">100+k</h1>
+          <p>Completed Rides</p>
+        </div>
+        <div class="p-2 flex flex-col gap-2">
+          <p style="width: 40px;" class="bg-[navy] py-2 px-3  rounded-full"><i class="fa-solid fa-user text-white "></i></p>
+          <h1 class="text-[navy] text-2xl font-bold">12+</h1>
+          <p>Years Exp</p>
+          <div class="flex gap-4">
+  <div class="flex justify-start items-center ">
+  <button
+    class="bg-[#0B1F3A] text-white font-bold px-6 py-3 rounded-md hover:bg-[#08172B] transition ">
+    Learn More
+  </button>
+
+<button class="bg-transparent text-[#0B1F3A] font-bold px-6 py-3">
+  Meet Our Drivers <i class="fa-solid fa-arrow-right-long"></i>
+</button>
+</div>
+</div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <div class="text-center max-w-3xl mx-auto">
+  <p class="text-[#0B1F3A] font-semibold mb-3">
+    Why choose us
+  </p>
+
+  <h2 class="text-4xl font-bold text-[#0B1F3A] mb-4">
+    Why Riders Prefer Fast-Ride
+  </h2>
+
+  <p class="text-gray-600 leading-relaxed">
+    We are committed to providing a superior ride experience with safety,
+    reliability, and affordability at the core of everything we do. Join
+    millions of satisfied riders who trust Fast-Ride for their daily commute
+    and special trips.
+  </p>
+</div>
+<div class="flex justify-center items-center gap-[20px]">
+
+  
+  <div class="bg-[black]/10 p-[25px] rounded-xl w-[300px] h-[230px]
+              transition-all duration-300 ease-in-out
+              hover:-translate-y-2 hover:shadow-xl hover:bg-white">
+
+    <h3 class="bg-[navy] py-2 px-3 text-3xl inline-block
+               transition-transform duration-300
+               hover:scale-110">
+      <i class="fa-solid fa-burst text-white"></i>
+    </h3>
+
+    <h1 class="text-[navy] font-bold text-3xl p-4">
+      Safe & Secure
+    </h1>
+
+    <p>All drivers are verified and rides are tracked in real-time for your safety.</p>
+  </div>
+
+
+  
+  <div class="bg-[black]/10 p-[25px] rounded-xl w-[300px] h-[230px]
+              transition-all duration-300 ease-in-out
+              hover:-translate-y-2 hover:shadow-xl hover:bg-white">
+
+    <h3 class="bg-[navy] py-2 px-3 text-3xl inline-block
+               transition-transform duration-300
+               hover:scale-110">
+      <i class="fa-solid fa-burst text-white"></i>
+    </h3>
+
+    <h1 class="text-[navy] font-bold text-3xl p-4">
+      Fast Booking
+    </h1>
+
+    <p>Book a ride in under 30 seconds with our intuitive interface.</p>
+  </div>
+
+
+  
+  <div class="bg-[black]/10 p-[25px] rounded-xl w-[300px] h-[230px]
+              transition-all duration-300 ease-in-out
+              hover:-translate-y-2 hover:shadow-xl hover:bg-white">
+
+    <h3 class="bg-[navy] py-2 px-3 text-3xl inline-block
+               transition-transform duration-300
+               hover:scale-110">
+      <i class="fa-solid fa-burst text-white"></i>
+    </h3>
+
+    <h1 class="text-[navy] font-bold text-3xl p-4">
+      24/7 Support
+    </h1>
+
+    <p>Our customer support team is always available to assist you.</p>
+  </div>
+
+
+  
+  <div class="bg-[black]/10 p-[25px] rounded-xl w-[300px] h-[230px]
+              transition-all duration-300 ease-in-out
+              hover:-translate-y-2 hover:shadow-xl hover:bg-white">
+
+    <h3 class="bg-[navy] py-2 px-3 text-3xl inline-block
+               transition-transform duration-300
+               hover:scale-110">
+      <i class="fa-solid fa-burst text-white"></i>
+    </h3>
+
+    <h1 class="text-[navy] font-bold text-3xl p-4">
+      Best Prices
+    </h1>
+
+    <p>Competitive pricing with no surge charges, ensuring you get the best value for your ride.</p>
+  </div>
+
+</div>
+<div class="text-center max-w-3xl mx-auto">
+  <p class="text-[#0B1F3A] font-semibold mb-3">
+    Our Services
+  </p>
+
+  <h2 class="text-4xl font-bold text-[#0B1F3A] mb-4">
+    Comprehensive Mobility Solutions
+  </h2>
+
+  <p class="text-gray-600 leading-relaxed">
+    We offer a range of transportation services designed to meet your diverse needs, all backed by our commitment to safety, reliability, and convenience.
+  </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6 py-10">
+
+  
+  <div
+    class="bg-white rounded-2xl overflow-hidden shadow-md
+           transition-all duration-300 ease-in-out
+           hover:-translate-y-2 hover:shadow-2xl">
+
+    
+    <div class="h-[290px] overflow-hidden">
+      <img
+        src="https://couriers.indrive.com/assets/landing/flow//order.desktop.webp"
+        alt="Ride Sharing"
+        class="w-full h-full object-cover
+               transition-transform duration-500 ease-in-out
+               hover:scale-110"
+      >
+    </div>
+
+    
+    <div class="p-6">
+
+      
+      <div
+        class="w-[72px] h-[72px] rounded-full bg-slate-100
+               flex items-center justify-center mb-7
+               transition-all duration-300
+               hover:bg-slate-200 hover:scale-110">
+        <i class="fa-solid fa-car text-[25px] text-[#09243b]"></i>
+      </div>
+
+      <h2 class="text-[#09243b] text-3xl font-medium mb-4">
+        Ride Sharing
+      </h2>
+
+      <p class="text-[#58718d] text-xl leading-9 mb-8">
+        Affordable and Reliable rides with transparent pricing and
+        real-time tracking.
+      </p>
+
+      
+      <button
+        class="bg-[#09243b] text-white text-xl font-bold
+               px-5 py-2 rounded-xl
+               transition-all duration-300 ease-in-out
+               hover:bg-[#163d5c]
+               hover:-translate-y-1 hover:shadow-lg
+               active:scale-95">
+        Book a Ride
+      </button>
+
+    </div>
+  </div>
+
+
+  
+  <div
+    class="bg-white rounded-2xl overflow-hidden shadow-md
+           transition-all duration-300 ease-in-out
+           hover:-translate-y-2 hover:shadow-2xl">
+
+    
+    <div class="h-[290px] overflow-hidden">
+      <img
+        src="https://fastridelive.com/fast2.png"
+        alt="Corporate Solutions"
+        class="w-full h-full object-cover
+               transition-transform duration-500 ease-in-out
+               hover:scale-110"
+      >
+    </div>
+
+    
+    <div class="p-6">
+
+      
+      <div
+        class="w-[72px] h-[72px] rounded-full bg-slate-100
+               flex items-center justify-center mb-7
+               transition-all duration-300
+               hover:bg-slate-200 hover:scale-110">
+        <i class="fa-solid fa-user-tie text-[25px] text-[#09243b]"></i>
+      </div>
+
+      <h2 class="text-[#09243b] text-3xl font-medium mb-4">
+        Corporate Solutions
+      </h2>
+
+      <p class="text-[#58718d] text-xl leading-9 mb-8">
+        Dedicated transportation services for businesses and
+        corporate clients.
+      </p>
+
+      
+      <button
+        class="bg-[#09243b] text-white text-xl font-bold
+               px-5 py-2 rounded-xl
+               transition-all duration-300 ease-in-out
+               hover:bg-[#163d5c]
+               hover:-translate-y-1 hover:shadow-lg
+               active:scale-95">
+        Get Started
+      </button>
+
+    </div>
+  </div>
+
+
+  
+  <div
+    class="bg-white rounded-2xl overflow-hidden shadow-md
+           transition-all duration-300 ease-in-out
+           hover:-translate-y-2 hover:shadow-2xl">
+
+    
+    <div class="h-[290px] overflow-hidden">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgH8NnZOIOeqCPL7w1fJKmFhBMe2LHbPGvXA&s"
+        alt="Safety First"
+        class="w-full h-full object-cover
+               transition-transform duration-500 ease-in-out
+               hover:scale-110"
+      >
+    </div>
+
+    
+    <div class="p-6">
+
+      
+      <div
+        class="w-[72px] h-[72px] rounded-full bg-slate-100
+               flex items-center justify-center mb-7
+               transition-all duration-300
+               hover:bg-slate-200 hover:scale-110">
+        <i class="fa-solid fa-shield-halved text-[25px] text-[#09243b]"></i>
+      </div>
+
+      <h2 class="text-[#09243b] text-3xl font-medium mb-4">
+        Safety First
+      </h2>
+
+      <p class="text-[#58718d] text-xl leading-9 mb-8">
+        Verified drivers, emergency assistance, and 24/7 customer
+        support.
+      </p>
+
+      
+      <button
+        class="bg-[#09243b] text-white text-xl font-bold
+               px-5 py-2 rounded-xl
+               transition-all duration-300 ease-in-out
+               hover:bg-[#163d5c]
+               hover:-translate-y-1 hover:shadow-lg
+               active:scale-95">
+        Learn More
+      </button>
+
+    </div>
+  </div>
+
+
+  
+  <div
+    class="bg-white rounded-2xl overflow-hidden shadow-md
+           transition-all duration-300 ease-in-out
+           hover:-translate-y-2 hover:shadow-2xl">
+
+    
+    <div class="h-[290px] overflow-hidden">
+      <img
+        src="https://fastridelive.com/fast1.png"
+        alt="Mobile App"
+        class="w-full h-full object-cover
+               transition-transform duration-500 ease-in-out
+               hover:scale-110"
+      >
+    </div>
+
+    
+    <div class="p-6">
+
+      
+      <div
+        class="w-[72px] h-[72px] rounded-full bg-slate-100
+               flex items-center justify-center mb-7
+               transition-all duration-300
+               hover:bg-slate-200 hover:scale-110">
+        <i class="fa-solid fa-mobile-screen-button text-[25px] text-[#09243b]"></i>
+      </div>
+
+      <h2 class="text-[#09243b] text-3xl font-medium mb-4">
+        Mobile App
+      </h2>
+
+      <p class="text-[#58718d] text-xl leading-9 mb-8">
+        Easy booking, payments, and ride management through our
+        intuitive app.
+      </p>
+
+      
+      <button
+        class="bg-[#09243b] text-white text-xl font-bold
+               px-5 py-2 rounded-xl
+               transition-all duration-300 ease-in-out
+               hover:bg-[#163d5c]
+               hover:-translate-y-1 hover:shadow-lg
+               active:scale-95">
+        Download App
+      </button>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Frequently Asked Questions</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .faq-answer {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-[#f7f9fb] text-[#062d50]">
+
+  <!-- Main Section -->
+  <section class="min-h-screen border-t border-gray-200">
+
+    <div class="mx-auto max-w-[1220px] px-6 py-3 lg:px-0">
+
+      <div class="grid grid-cols-1 gap-10 lg:grid-cols-[592px_592px]">
+
+        <!-- ================= LEFT SIDE ================= -->
+        <div class="pt-0">
+
+          <!-- Badge -->
+          <div
+            class="mb-7 inline-flex rounded-lg bg-[#e2e7eb] px-4 py-2"
+          >
+            <span
+              class="text-[12px] font-semibold tracking-[1.5px] text-[#092f50]"
+            >
+              SUPPORT CENTER
+            </span>
+          </div>
+
+          <!-- Heading -->
+          <h1
+            class="max-w-[530px] text-[48px] font-extrabold leading-[1.18] tracking-[-1.2px] text-[#062d50]"
+          >
+            Frequently Asked<br />
+            Questions
+          </h1>
+
+          <!-- Description -->
+          <p
+            class="mt-7 text-[16px] leading-7 text-[#31577b]"
+          >
+            Can't find what you're looking for?
+            Reach out to our 24/7 support team.
+          </p>
+
+
+          <!-- ================= FAQ LIST ================= -->
+          <div class="mt-8 space-y-4">
+
+
+            <!-- FAQ 1 - OPEN -->
+            <div
+              class="faq-item overflow-hidden rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.10)]"
+            >
+
+              <button
+                onclick="toggleFaq(this)"
+                class="faq-button flex w-full items-center justify-between px-6 py-[23px] text-left"
+              >
+
+                <span
+                  class="text-[16px] font-semibold text-[#062d50]"
+                >
+                  How do I book a ride?
+                </span>
+
+                <!-- Arrow -->
+                <svg
+                  class="arrow h-5 w-5 rotate-180 text-[#91a6bd] transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+
+              </button>
+
+
+              <!-- Answer -->
+              <div
+                class="faq-answer border-t border-[#edf0f3] px-6 pb-3 pt-3"
+              >
+                <p
+                  class="text-[16px] leading-[26px] text-[#31577b]"
+                >
+                  Simply open our app, enter your pickup and drop-off
+                  locations, select your preferred vehicle type, and
+                  confirm your booking. You'll see the fare estimate
+                  before confirming.
+                </p>
+              </div>
+
+            </div>
+
+
+            <!-- FAQ 2 -->
+            <div
+              class="faq-item overflow-hidden rounded-2xl border border-[#dbe3ea] bg-white"
+            >
+
+              <button
+                onclick="toggleFaq(this)"
+                class="faq-button flex w-full items-center justify-between px-6 py-[25px] text-left"
+              >
+
+                <span
+                  class="text-[16px] font-semibold text-[#062d50]"
+                >
+                  How is the fare calculated?
+                </span>
+
+                <svg
+                  class="arrow h-5 w-5 text-[#91a6bd] transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+
+              </button>
+
+              <div class="faq-answer hidden border-t border-[#edf0f3] px-6 pb-5 pt-3">
+                <p class="text-[16px] leading-[26px] text-[#31577b]">
+                  Our fare is calculated based on distance, estimated
+                  travel time, vehicle type, and applicable charges.
+                </p>
+              </div>
+
+            </div>
+
+
+            <!-- FAQ 3 -->
+            <div
+              class="faq-item overflow-hidden rounded-2xl border border-[#dbe3ea] bg-white"
+            >
+
+              <button
+                onclick="toggleFaq(this)"
+                class="faq-button flex w-full items-center justify-between px-6 py-[25px] text-left"
+              >
+
+                <span
+                  class="text-[16px] font-semibold text-[#062d50]"
+                >
+                  Are drivers verified and safe?
+                </span>
+
+                <svg
+                  class="arrow h-5 w-5 text-[#91a6bd] transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+
+              </button>
+
+              <div class="faq-answer hidden border-t border-[#edf0f3] px-6 pb-5 pt-3">
+                <p class="text-[16px] leading-[26px] text-[#31577b]">
+                  Yes. Drivers go through our verification process
+                  before they are approved to provide rides.
+                </p>
+              </div>
+
+            </div>
+
+
+            <!-- FAQ 4 -->
+            <div
+              class="faq-item overflow-hidden rounded-2xl border border-[#dbe3ea] bg-white"
+            >
+
+              <button
+                onclick="toggleFaq(this)"
+                class="faq-button flex w-full items-center justify-between px-6 py-[25px] text-left"
+              >
+
+                <span
+                  class="text-[16px] font-semibold text-[#062d50]"
+                >
+                  What payment methods are accepted?
+                </span>
+
+                <svg
+                  class="arrow h-5 w-5 text-[#91a6bd] transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+
+              </button>
+
+              <div class="faq-answer hidden border-t border-[#edf0f3] px-6 pb-5 pt-3">
+                <p class="text-[16px] leading-[26px] text-[#31577b]">
+                  You can pay using the supported payment methods
+                  available in the app at checkout.
+                </p>
+              </div>
+
+            </div>
+
+
+            <!-- FAQ 5 -->
+            <div
+              class="faq-item overflow-hidden rounded-2xl border border-[#dbe3ea] bg-white"
+            >
+
+              <button
+                onclick="toggleFaq(this)"
+                class="faq-button flex w-full items-center justify-between px-6 py-[25px] text-left"
+              >
+
+                <span
+                  class="text-[16px] font-semibold text-[#062d50]"
+                >
+                  How can I cancel or reschedule a ride?
+                </span>
+
+                <svg
+                  class="arrow h-5 w-5 text-[#91a6bd] transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+
+              </button>
+
+              <div class="faq-answer hidden border-t border-[#edf0f3] px-6 pb-5 pt-3">
+                <p class="text-[16px] leading-[26px] text-[#31577b]">
+                  You can cancel or reschedule your ride from the
+                  booking section of the app.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= RIGHT SIDE ================= -->
+        <div class="relative">
+
+          <!-- Image Card -->
+          <div
+            class="relative h-[688px] overflow-hidden rounded-[22px] bg-[#f4f7f9] shadow-[0_20px_45px_rgba(0,0,0,0.12)]"
+          >
+
+            <!-- Driver Image -->
+            <img
+              src="https://staffly.pk/uploads/staffly-verified-driver-pakistan.webp"
+              alt="Driver"
+              class="absolute inset-0 h-full w-full object-cover object-top"
+            />
+
+
+            <!-- Bottom Support Box -->
+            <div
+              class="absolute bottom-6 left-6 right-6 flex items-center gap-4 rounded-[17px] bg-white/95 px-5 py-5 shadow-[0_8px_20px_rgba(0,0,0,0.13)] backdrop-blur-sm"
+            >
+
+              <!-- Question Icon -->
+              <div
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#062d50]"
+              >
+
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path
+                    stroke-linecap="round"
+                    d="M9.8 9a2.3 2.3 0 1 1 3.7 1.8c-1 .7-1.5 1.2-1.5 2.2"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    d="M12 16h.01"
+                  />
+                </svg>
+
+              </div>
+
+
+              <!-- Support Text -->
+              <div>
+                <h3
+                  class="text-[16px] font-bold text-[#062d50]"
+                >
+                  Need direct help?
+                </h3>
+
+                <p
+                  class="mt-1 text-[14px] text-[#536d86]"
+                >
+                  Our team is online 24/7
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+<!-- FOOTER -->
+<footer class="bg-[#f7f9fc] px-4 py-5 sm:px-6 lg:px-8">
+
+  <!-- Rounded Main Footer -->
+  <div
+    class="mx-auto max-w-[1720px] overflow-hidden rounded-[24px] border border-[#e5ebf1] bg-white shadow-[0_4px_18px_rgba(8,45,75,0.04)]"
+  >
+
+    <!-- Footer Content -->
+    <div
+      class="grid grid-cols-1 gap-10 px-7 py-9
+             md:grid-cols-2
+             lg:grid-cols-[1.35fr_1fr_1.35fr_1.15fr]
+             lg:px-10 lg:py-10"
+    >
+
+      <!-- ================= BRAND ================= -->
+      <div>
+
+        <!-- Logo -->
+        <div class="mb-12">
+          <img
+            src="https://fastridelive.com/first_ride.png"
+            alt="FastRide"
+            class="h-[65px] w-auto object-contain"
+          />
+        </div>
+
+        <!-- Description -->
+        <p
+          class="max-w-[355px] text-[16px] font-medium leading-[31px] text-[#173c60]"
+        >
+          FastRide is your Trusted Partner for safe,<br
+            class="hidden xl:block"
+          />
+          reliable, and affordable rides. Join millions<br
+            class="hidden xl:block"
+          />
+          of riders who choose us for their daily<br
+            class="hidden xl:block"
+          />
+          commute and special trips.
+        </p>
+
+
+        <!-- Social Icons -->
+        <div class="mt-10 flex gap-5">
+
+          <a
+            href="#"
+            class="flex h-[60px] w-[60px] items-center justify-center rounded-[15px]
+                   border border-[#e1e8ee] bg-white text-[#092e4d]
+                   shadow-[0_3px_8px_rgba(0,0,0,0.08)]
+                   transition hover:-translate-y-1 hover:shadow-md"
+          >
+            <span class="text-[25px] font-bold">f</span>
+          </a>
+
+          <a
+            href="#"
+            class="flex h-[60px] w-[60px] items-center justify-center rounded-[15px]
+                   border border-[#e1e8ee] bg-white text-[#092e4d]
+                   shadow-[0_3px_8px_rgba(0,0,0,0.08)]
+                   transition hover:-translate-y-1 hover:shadow-md"
+          >
+            <span class="text-[23px] font-bold">♥</span>
+          </a>
+
+          <a
+            href="#"
+            class="flex h-[60px] w-[60px] items-center justify-center rounded-[15px]
+                   border border-[#e1e8ee] bg-white text-[#092e4d]
+                   shadow-[0_3px_8px_rgba(0,0,0,0.08)]
+                   transition hover:-translate-y-1 hover:shadow-md"
+          >
+            <span class="text-[21px] font-bold">◎</span>
+          </a>
+
+          <a
+            href="#"
+            class="flex h-[60px] w-[60px] items-center justify-center rounded-[15px]
+                   border border-[#e1e8ee] bg-white text-[#092e4d]
+                   shadow-[0_3px_8px_rgba(0,0,0,0.08)]
+                   transition hover:-translate-y-1 hover:shadow-md"
+          >
+            <span class="text-[22px] font-bold">in</span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= COMPANY ================= -->
+      <div>
+
+        <h3
+          class="mb-11 text-[17px] font-bold tracking-[4px] text-[#062d4d]"
+        >
+          COMPANY
+        </h3>
+
+        <ul class="space-y-7">
+
+          <li>
+            <a
+              href="#"
+              class="text-[16px] font-medium text-[#31577b] transition hover:text-[#062d4d]"
+            >
+              About Us
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[16px] font-medium text-[#31577b] transition hover:text-[#062d4d]"
+            >
+              Our Services
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[16px] font-medium text-[#31577b] transition hover:text-[#062d4d]"
+            >
+              City Coverage
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[16px] font-medium text-[#31577b] transition hover:text-[#062d4d]"
+            >
+              Careers
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[16px] font-medium text-[#31577b] transition hover:text-[#062d4d]"
+            >
+              Privacy Policy
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- ================= SUPPORT ================= -->
+      <div>
+
+        <h3
+          class="mb-11 text-[17px] font-bold tracking-[4px] text-[#062d4d]"
+        >
+          SUPPORT
+        </h3>
+
+
+        <!-- Address -->
+        <div class="mb-7 flex items-start gap-5">
+
+          <div
+            class="flex h-[52px] w-[52px] shrink-0 items-center justify-center
+                   rounded-[12px] border border-[#e5ebf1] bg-white
+                   text-[#092e4d] shadow-[0_2px_7px_rgba(0,0,0,0.08)]"
+          >
+            <span class="text-[23px]">●</span>
+          </div>
+
+          <p
+            class="pt-2 text-[16px] font-medium leading-[26px] text-[#173c60]"
+          >
+            OFFICE NO4-514 - OWNER BY<br />
+            HIND ABDULGHAFFAR GHALOOM<br />
+            HUSAIN - AL KHABEESI - DUBAI
+          </p>
+
+        </div>
+
+
+        <!-- Phone 1 -->
+        <div class="mb-7 flex items-center gap-5">
+
+          <div
+            class="flex h-[52px] w-[52px] shrink-0 items-center justify-center
+                   rounded-[12px] border border-[#e5ebf1] bg-white
+                   text-[#092e4d] shadow-[0_2px_7px_rgba(0,0,0,0.08)]"
+          >
+            <span class="text-[23px]">⌕</span>
+          </div>
+
+          <p class="text-[16px] font-medium text-[#173c60]">
+            03375114411
+          </p>
+
+        </div>
+
+
+        <!-- Phone 2 -->
+        <div class="mb-7 flex items-center gap-5">
+
+          <div
+            class="flex h-[52px] w-[52px] shrink-0 items-center justify-center
+                   rounded-[12px] border border-[#e5ebf1] bg-white
+                   text-[#092e4d] shadow-[0_2px_7px_rgba(0,0,0,0.08)]"
+          >
+            <span class="text-[23px]">⌕</span>
+          </div>
+
+          <p class="text-[16px] font-medium text-[#173c60]">
+            +92 331 1449333
+          </p>
+
+        </div>
+
+
+        <!-- Email -->
+        <div class="flex items-center gap-5">
+
+          <div
+            class="flex h-[52px] w-[52px] shrink-0 items-center justify-center
+                   rounded-[12px] border border-[#e5ebf1] bg-white
+                   text-[#092e4d] shadow-[0_2px_7px_rgba(0,0,0,0.08)]"
+          >
+            <span class="text-[22px]">✉</span>
+          </div>
+
+          <p class="text-[16px] font-medium text-[#173c60]">
+            info@fastridelive.com
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= NEWSLETTER ================= -->
+      <div>
+
+        <h3
+          class="mb-11 text-[17px] font-bold tracking-[4px] text-[#062d4d]"
+        >
+          STAY UPDATED
+        </h3>
+
+
+        <!-- Subscribe Card -->
+        <div
+          class="rounded-[20px] border border-[#dfe7ee] bg-white
+                 p-8 shadow-[0_3px_10px_rgba(0,0,0,0.08)]"
+        >
+
+          <p
+            class="mb-6 text-[16px] font-medium leading-[26px] text-[#31577b]"
+          >
+            Subscribe for exclusive offers and ride<br
+              class="hidden xl:block"
+            />
+            updates.
+          </p>
+
+
+          <!-- Email -->
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="h-[63px] w-full rounded-[17px]
+                   border border-[#dce5ed] bg-[#f9fbfd]
+                   px-5 text-[16px] text-[#173c60]
+                   outline-none transition
+                   placeholder:text-[#8192a4]
+                   focus:border-[#092e4d]"
+          />
+
+
+          <!-- Button -->
+          <button
+            class="mt-4 flex h-[54px] w-full items-center justify-center gap-3
+                   rounded-[16px] bg-[#082d4a]
+                   text-[14px] font-bold text-white
+                   shadow-[0_4px_8px_rgba(0,0,0,0.12)]
+                   transition hover:bg-[#0c3d61] hover:-translate-y-[1px]"
+          >
+            Subscribe
+            <span class="text-[20px]">➤</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ================= BOTTOM BAR ================= -->
+    <div
+      class="flex flex-col gap-5 border-t border-[#dfe6ed]
+             px-7 py-6
+             md:flex-row md:items-center md:justify-between
+             lg:px-10"
+    >
+
+      <!-- Copyright -->
+      <p
+        class="text-[15px] font-medium text-[#8198b0]"
+      >
+        © 2026 FastRide Inc. — Crafting the future of transit.
+      </p>
+
+
+      <!-- Bottom Links -->
+      <div class="flex flex-wrap gap-8 sm:gap-12">
+
+        <a
+          href="#"
+          class="text-[14px] font-bold tracking-[1.5px] text-[#526d88]
+                 transition hover:text-[#062d4d]"
+        >
+          TERMS
+        </a>
+
+        <a
+          href="#"
+          class="text-[14px] font-bold tracking-[1.5px] text-[#526d88]
+                 transition hover:text-[#062d4d]"
+        >
+          PRIVACY
+        </a>
+
+        <a
+          href="#"
+          class="text-[14px] font-bold tracking-[1.5px] text-[#526d88]
+                 transition hover:text-[#062d4d]"
+        >
+          COOKIES
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+ 
+</body>
+</html>
+
+
+  <!-- ================= FAQ JAVASCRIPT ================= -->
+  <script>
+
+    function toggleFaq(button) {
+
+      const item = button.closest(".faq-item");
+      const answer = item.querySelector(".faq-answer");
+      const arrow = item.querySelector(".arrow");
+
+      const isOpen = !answer.classList.contains("hidden");
+
+      // Close all FAQs
+      document.querySelectorAll(".faq-item").forEach((faq) => {
+
+        const faqAnswer = faq.querySelector(".faq-answer");
+        const faqArrow = faq.querySelector(".arrow");
+
+        faqAnswer.classList.add("hidden");
+        faqArrow.classList.remove("rotate-180");
+
+        faq.classList.remove(
+          "shadow-[0_8px_20px_rgba(0,0,0,0.10)]"
+        );
+
+        faq.classList.add("border", "border-[#dbe3ea]");
+
+      });
+
+
+      // Open clicked FAQ
+      if (!isOpen) {
+
+        answer.classList.remove("hidden");
+        arrow.classList.add("rotate-180");
+
+        item.classList.remove(
+          "border",
+          "border-[#dbe3ea]"
+        );
+
+        item.classList.add(
+          "shadow-[0_8px_20px_rgba(0,0,0,0.10)]"
+        );
+
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
+<!-- 
+  ================= JAVASCRIPT ================= -->
+
+   <script>
+
+    // Mobile menu
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+
+    // Carousel
+    const carousel = document.getElementById("carousel");
+
+    const nextBtn = document.getElementById("next");
+    const prevBtn = document.getElementById("prev");
+
+    const dots = document.querySelectorAll(".dot");
+
+    let currentSlide = 0;
+    const totalSlides = 3;
+
+
+    // Show slide
+    function showSlide(index) {
+
+      if (index >= totalSlides) {
+        currentSlide = 0;
+      }
+
+      if (index < 0) {
+        currentSlide = totalSlides - 1;
+      }
+
+      carousel.style.transform =
+        `translateX(-${currentSlide * 100}%)`;
+
+      // Update dots
+      dots.forEach((dot, i) => {
+
+        if (i === currentSlide) {
+          dot.classList.remove("bg-white/50");
+          dot.classList.add("bg-white");
+        } else {
+          dot.classList.remove("bg-white");
+          dot.classList.add("bg-white/50");
+        }
+
+      });
+    }
+
+
+    // Next slide
+    nextBtn.addEventListener("click", () => {
+
+      currentSlide++;
+
+      if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+      }
+
+      showSlide(currentSlide);
+
+    });
+
+
+    // Previous slide
+    prevBtn.addEventListener("click", () => {
+
+      currentSlide--;
+
+      if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+      }
+
+      showSlide(currentSlide);
+
+    });
+
+
+    // Dot navigation
+    dots.forEach((dot) => {
+
+      dot.addEventListener("click", () => {
+
+        currentSlide = Number(dot.dataset.slide);
+
+        showSlide(currentSlide);
+
+      });
+
+    });
+
+
+    // AUTOPLAY
+    setInterval(() => {
+
+      currentSlide++;
+
+      if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+      }
+
+      showSlide(currentSlide);
+
+    }, 4000);
+
+  </script> 
+
+</body>
+</html>
